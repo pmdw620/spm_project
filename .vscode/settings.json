@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.port": 5501,
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript"
+    ]
+}
