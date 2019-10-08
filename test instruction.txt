@@ -7,5 +7,5 @@
 7. Run use spm_project
 8. Copy the content in the test.sql to the command line and execute
 9. Run the xampp control panel (Apache and MySQL)
-10. Type http://localhost/spm_project/index.php
+10. Type http://localhost/spm_project/index.php in your browser
 11. You can run test in the web and test the data in the database

@@ -54,6 +54,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		nav.top a:hover {
 			color: #C40000;
 		}
+
+		li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:  #f2f2f2;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 	</style>
 	
 
@@ -73,8 +114,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<span class="menu"> </span>
 					<ul>
 						<li class="active"><a href="index.php">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
+						<li><a href="about.php">About</a></li>
+						<li><a href="services.php">Services</a></li>
 						<?php
 								// if the user is not logged in, show login/register
 								session_start();
@@ -83,7 +124,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									?><li><a href="login.html">Login/Register</li></a><?php
 								} else{
 									// if the user has logged in show name and dropdown menu
-									?><li><a href="#">Welcome, <?php echo $_SESSION["user"]['fname'] ?></a></li><?php
+									?>
+										<li class="dropdown"><a href="#" class="dropbtn">Welcome, <?php echo $_SESSION["user"]['fname'] ?></a>
+										<div class="dropdown-content">
+										<a href="#">Profiles</a>
+      									<a href="#">Booking</a>
+      									<a href="phpsrc/userLogOut.php">Log Out</a>
+										</div>
+										</li>
+									<?php
 								}
 							 ?>
 						<!-- <li><a href="contact.html">Contact</a></li> -->
@@ -138,21 +187,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					        <li>
 					          <img class="img-responsive" src="images/slide2.jpg" alt="">
 					          <div class="slider-caption">
-					          	<h1>the<span>Car</span> Wash CENTER</h1>
+					          	<h1>the <span>Car</span> Wash CENTER</h1>
 					         	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
 					          </div>
 					        </li>
 					        <li>
 					          <img src="images/slide3.jpg" alt="">
 					           <div class="slider-caption">
-					          	<h1>the<span>Car</span> Care CENTER</h1>
+							   <h1>the <span>Car</span> Wash CENTER</h1>
 					          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
 					          </div>
 					        </li>
 					        <li>
 					          <img src="images/slide1.jpg" alt="">
 					           <div class="slider-caption">
-					           	<h1>the<span>Car</span> Wash CENTER</h1>
+							   <h1>the <span>Car</span> Wash CENTER</h1>
 					           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
 					          </div>
 					        </li>

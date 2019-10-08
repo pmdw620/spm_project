@@ -65,10 +65,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="top-nav">
 					<span class="menu"> </span>
 					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="active"><a href="services.html">Services</a></li>
-						<li><a href="#">Booking</a></li>
+					<li class="active"><a href="index.php">Home</a></li>
+						<li><a href="about.php">About</a></li>
+						<li><a href="services.php">Services</a></li>
+						<?php
+								// if the user is not logged in, show login/register
+								session_start();
+								error_reporting( error_reporting() & ~E_NOTICE );
+								if($_SESSION["user"]==null){
+									?><li><a href="login.html">Login/Register</li></a><?php
+								} else{
+									// if the user has logged in show name and dropdown menu
+									?>
+										<li class="dropdown"><a href="#" class="dropbtn">Welcome, <?php echo $_SESSION["user"]['fname'] ?></a>
+										<div class="dropdown-content">
+										<a href="#">Profiles</a>
+      									<a href="#">Booking</a>
+      									<a href="phpsrc/userLogOut.php">Log Out</a>
+										</div>
+										</li>
+									<?php
+								}
+							 ?>
 						<!-- <li><a href="contact.html">Contact</a></li> -->
 						<div class="clearfix"> </div>
 					</ul>
