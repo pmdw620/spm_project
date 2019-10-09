@@ -50,6 +50,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		nav.top a:hover {
 			color: #C40000;
 		}
+		li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:  #f2f2f2;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 	</style>
 	<body>
 		<!-- container -->
@@ -65,8 +105,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="top-nav">
 					<span class="menu"> </span>
 					<ul>
-					<li class="active"><a href="index.php">Home</a></li>
-						<li><a href="about.php">About</a></li>
+					<li ><a href="index.php">Home</a></li>
+						<li class="active"><a href="about.php">About</a></li>
 						<li><a href="services.php">Services</a></li>
 						<?php
 								// if the user is not logged in, show login/register
@@ -79,7 +119,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									?>
 										<li class="dropdown"><a href="#" class="dropbtn">Welcome, <?php echo $_SESSION["user"]['fname'] ?></a>
 										<div class="dropdown-content">
-										<a href="#">Profiles</a>
+										<a href="myAccount.php">Profiles</a>
       									<a href="#">Booking</a>
       									<a href="phpsrc/userLogOut.php">Log Out</a>
 										</div>
