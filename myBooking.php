@@ -120,88 +120,131 @@ li.dropdown {
 </div>
 
 
-<div id="middle-div">
-  <div id="sidebar">
-    <!-- <link rel="stylesheet" href="css/5grid/core.css" />
-        <link rel="stylesheet" href="css/5grid/core-desktop.css" />
-        <link rel="stylesheet" href="css/5grid/core-1200px.css" />
-        <link rel="stylesheet" href="css/5grid/core-noscript.css" /> -->
-    <!-- <link rel="stylesheet" href="css/style-1200px.css" /> -->
-
-    <!-- Nav -->
-    <nav id="nav" class="mobileUI-site-nav">
-      <ul>
-        <li class="current_page_item"><a href="myAccount.php">my account</a></li>
-        <li><a href="changePassword.php">change password</a></li>
-        <li><a href="changeOtherInformation.php">change other information</a></li>
-        <li><a href="myCars.php">my cars</a></li>
-      </ul>
-    </nav>
-  </div>
+<div >
 
 
+  <style>
+    .registerTable {
+      border-collapse: collapse;
+      table-layout: fixed;
+      
+    }
 
-  <div id="content" class="mobileUI-main-content">
+    table.registerTable{
+      
+      margin: 30px;
+    }
+
+    tr.odd {
+      background-color: #f8f8f8;
+    }
+
+    tr.head {
+      border-bottom-width: 4px;
+      border-bottom-color: lightgray;
+      border-bottom-style: solid;
+      font-weight: bold;
+    }
+
+    tr {
+
+      height: 35px;
+    }
+
+    td {
+      /* width:25%; */
+      border-style: solid;
+      border-width: 1px;
+      border-color: lightgray;
+      text-align: center;
+    }
+    td.bookTime {
+      width: 250px !important;
+    }
+    td.carType {
+      width: 250px !important;
+    }
+    td.servicePrice {
+      width: 250px !important;
+    }
+    td.operationButton {
+      width: 250px !important;
+    }
+
+  </style>
+
+  <div >
     <div class="registerDiv">
       <img src="images/slide5.jpg" class="loginBackgroundImg" id="loginBackgroundImg" width="100%">
+      
       <div align="center" class="registerTable" id="registerTable1">
         <table align="center" class="registerTable" id="registerTable1">
           <tbody>
-            <tr>
-              <td align="center" colspan="2">
-                <h2>My Account Information</h2>
-              </td>
+            <tr >
+                <td colspan="4"  style="border-width: 0; text-align: left;">
+                        <a href="booking.php" ><button  class="btn btn-success btn-lg" name="newBooking">NEW BOOKING</button></a>
+                </td>
             </tr>
-            <tr>
-              <td class="registerTableLeftTD">E-Mail address:</td>
-              <td class="registerTableRightTD">
-                <input type="text" name="email" value="<?php echo $_SESSION['user']['email'] ?>" style="width: 250px;border:none;" readonly="readonly" />
+            <form action="phpsrc/bookingManagement.php" method="post">
+            <tr class="head">
+              <!-- <td class="registerTableLeftTD" >Car name</td> -->
+              <td class="bookTime" > 
+                Time
               </td>
-            </tr>
-
-            <tr>
-              <td class="registerTableLeftTD">Phone Number:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="phoneNum" value="<?php echo $_SESSION['user']['phoneNumber'] ?>" readonly="readonly" />
+              <td class="carType" >
+                Car type
               </td>
+              <td class="servicePrice" > 
+                    Service price
+                  </td>
+                  <td class="operationButton" >
+                    Operation
+                  </td>
             </tr>
-            <tr>
-              <td class="registerTableLeftTD">FirstName:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="fname" value="<?php echo $_SESSION['user']['fname'] ?>" readonly="readonly" />
-              </td>
-            </tr>
-            <tr>
-              <td class="registerTableLeftTD">LastName:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="lname" value="<?php echo $_SESSION['user']['lname'] ?>" readonly="readonly" />
-              </td>
-            </tr>
-            <tr>
-              <td class="registerTableLeftTD">Street:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="street" value="<?php echo $_SESSION['user']['street'] ?>" readonly="readonly" />
-              </td>
-            </tr>
-            <tr>
-              <td class="registerTableLeftTD">Suburb:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="suburb" value="<?php echo $_SESSION['user']['suburb'] ?>" readonly="readonly" />
-              </td>
-            </tr>
-            <tr>
-              <td class="registerTableLeftTD">PostCode:</td>
-              <td class="registerTableRightTD">
-                <input style="border:none;" type="text" name="postCode" value="<?php echo $_SESSION['user']['postcode'] ?>" readonly="readonly" />
-
-              </td>
-            </tr>
-
-
+            <?php
+              $bookings = $_SESSION['user']['bookings'];
+              foreach($bookings as $key=>$booking){
+                echo "<tr>";
+                echo "<td class='bookTime'>";
+                echo $booking['service_time'];
+                echo "</td>";
+                echo "<td class='carType' >";
+                echo $booking['car_type'];
+                echo "</td>";
+                echo "<td class='servicePrice'>";
+                if($booking['service_option']==1){
+                  echo "$15";
+                } else if($booking['service_option']==2){
+                  echo "$25";
+                } else if($booking['service_option']==3){
+                  echo "$30";
+                } else{
+                  echo "Error";
+                }
+                echo "</td>";
+                date_default_timezone_set('Australia/Melbourne');
+                $validOperationTime = date('Y-m-d H:i', strtotime('+5 hours'));
+                if($booking['service_time'] > $validOperationTime){
+                  echo "<td class='operationButton'>";
+                echo "<button type='submit' class='btn btn-success' name='change$key'>CHANGE</button>";
+                echo "&nbsp&nbsp&nbsp";
+                echo "<button type='submit' class='btn btn-danger' name='delete$key'>DELETE</button>";
+                echo "</td>";
+              
+                } else{
+                  
+                echo "<td>You can't do operation when service is performing in 2 hours</td>";
+                }
+                echo "</tr>";
+              }
+            ?>
+            </form>
           </tbody>
         </table>
+        
 
       </div>
+      
     </div>
 
   </div>
@@ -236,11 +279,11 @@ li.dropdown {
           <h5>Site Map</h5>
 
           <ul>
-            <li><a href="index.php"><span> </span>Home</a>
+            <li><a href="index.html"><span> </span>Home</a>
             </li>
-            <li><a href="about.php"><span> </span>About</a>
+            <li><a href="about.html"><span> </span>About</a>
             </li>
-            <li><a href="services.php"><span> </span>Services</a>
+            <li><a href="services.html"><span> </span>Services</a>
             </li>
             <li><a href="#"><span> </span>Booking</a>
             </li>

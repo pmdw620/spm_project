@@ -94,7 +94,7 @@ li.dropdown {
 										<li class="dropdown active"><a href="#" class="dropbtn">Welcome, <?php echo $_SESSION["user"]['fname'] ?></a>
 										<div class="dropdown-content">
 										<a href="myAccount.php">Profiles</a>
-      									<a href="#">Booking</a>
+      									<a href="myBooking.php">Booking</a>
       									<a href="phpsrc/userLogOut.php">Log Out</a>
 										</div>
 										</li>
