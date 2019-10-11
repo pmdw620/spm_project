@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Carwash Website Template | Services :: w3layouts</title>
+		<title>Car Wash Booking System: Service</title>
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="js/jquery.min.js"></script>
 		 <!-- Custom Theme files -->
@@ -148,30 +148,32 @@ li.dropdown {
 					<!-- Services -->
 					<div class="services">
 						<div class="container">
+							<div class="about">
 							<div class="services-grids">
 								<div class="col-md-9 services-left">
 									<h1>Our services</h1>
 									<div class="services-left-grids">
 										<div class="col-md-6 services-left-grid">
-											<h3>Service Name</h3>
-											<p>Aenean iaculis, tortor sit amet molestie fringilla, sapien elit interdum mauris, sed cursus dui felis nec nisi. Nam vitae efficitur erat</p>
-											<a class="more-btn" href="#">More</a>
+											<h3>Wash Outside Only</h3>
+											<p>Wash outside only.</p>
+											<a class="more-btn" >$15</a>
 										</div>
 										<div class="col-md-6 services-left-grid">
-											<h3>Service Name</h3>
-											<p>Aenean iaculis, tortor sit amet molestie fringilla, sapien elit interdum mauris, sed cursus dui felis nec nisi. Nam vitae efficitur erat</p>
-											<a class="more-btn" href="#">More</a>
+											<h3>Wash inside and outside</h3>
+											<p>Wash inside and outside.</p>
+											<a class="more-btn" >$25</a>
 										</div>
 										<div class="col-md-6 services-left-grid">
-											<h3>Service Name</h3>
-											<p>Aenean iaculis, tortor sit amet molestie fringilla, sapien elit interdum mauris, sed cursus dui felis nec nisi. Nam vitae efficitur erat</p>
-											<a class="more-btn" href="#">More</a>
+											<h3>deluxe wash</h3>
+											<p>Deluxe wash (which is inside and outside and the car is very dirty)</p>
+											<a class="more-btn" >$30</a>
 										</div>
 										
 										<div class="clearfix"> </div>
 									</div>
 								</div>
 								<div class="clearfix"> </div>
+							</div>
 							</div>
 						</div>
 					</div>

@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Carwash Website Template | About :: w3layouts</title>
+		<title>Car Wash Booking System: About</title>
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="js/jquery.min.js"></script>
 		 <!-- Custom Theme files -->
@@ -151,20 +151,14 @@ li.dropdown {
 							<div class="about-grids">
 								<div class="col-md-9 about-left">
 									<h1>About us</h1>
-									<p>Praesent facilisis, dolor in commodo rutrum, risus elit dignissim mi, eu tempor ligula eros nec nunc. Integer accumsan viverra eleifend. Donec malesuada massa diam, quis finibus elit euismod ac. Cras rhoncus pulvinar dictum. Morbi porta commodo mauris eget eleifend. In non volutpat turpis, malesuada facilisis elit. Nam vitae elementum orci. Cras quis elit metus.</p>
-									<p>Aenean iaculis, tortor sit amet molestie fringilla, sapien elit interdum mauris, sed cursus dui felis nec nisi. Nam vitae efficitur erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra bibendum malesuada.</p>
+									<p>We are Gabriel and David. We are all hardworking young people. We've been washing our neighbor's car for years. Our professional technology has won a good reputation for us. Now we have an online reservation system. It's very convenient. I hope you like it.</p>
+									<p>You are also welcome to contact us via mobile phone and email.</p>
 										<ul>
-											<li><a href="#"><span> </span>Risus elit dignissim mi, eu tempor ligula eros nec nunc</a></li>
-											<li><a href="#"><span> </span>Pellentesque finibus tincidunt metus. Proin hendrerit fermentum tortor </a></li>
-											<li><a href="#"><span> </span>commodo rutrum, risus elit dignissim mi, eu tempor ligula eros nec nunc</a></li>
-											<li><a href="#"><span> </span>Praesent facilisis, dolor in commodo rutrum, risus elit dignissim mi,</a></li>
+											<li><a href="#"><span> </span>Phone number: ********</a></li>
+											<li><a href="#"><span> </span>Email: *******@***.*** </a></li>
 										</ul>
-									<p>Praesent facilisis, dolor in commodo rutrum, risus elit dignissim mi, eu tempor ligula eros nec nunc. Integer accumsan viverra eleifend. Donec malesuada massa diam, quis finibus elit euismod ac. Cras rhoncus pulvinar dictum. Morbi porta commodo mauris eget eleifend. In non volutpat turpis, malesuada facilisis elit. Nam vitae elementum orci. Cras quis elit metus.</p>
-									<ul>
-											<li><a href="#"><span> </span>commodo rutrum, risus elit dignissim mi, eu tempor ligula eros nec nunc</a></li>
-											<li><a href="#"><span> </span>Praesent facilisis, dolor in commodo rutrum, risus elit dignissim mi,</a></li>
-										</ul>
-									<p>Dolor in commodo rutrum, risus elit dignissim mi, eu tempor ligula eros nec nunc. Integer accumsan viverra eleifend. Donec malesuada massa diam, quis finibus elit euismod ac. Cras rhoncus pulvinar dictum. Morbi porta commodo mauris eget eleifend. In non volutpat turpis, malesuada facilisis elit. Nam vitae elementum orci. Cras quis elit metus.</p>
+									<p>Hope you get a good car wash experience.</p>
+
 								</div>
 								
 							</div>
@@ -172,18 +166,7 @@ li.dropdown {
 					</div>	
 					<!-- about-us -->
 							<!-- team-grids-caption -->
-							<div class="team-grids-caption">
-								<div class="container">
-									<div class="team-grids-caption-left">
-										<h4>He point of using Lorem Ipsum is that</h4>
-										<p>as opposed to using Many desktop publishing packages and web page editors now use </p>
-									</div>
-									<div class="team-grids-caption-right">
-										<a class="team-btn" href="#">ReadMore</a>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
+							
 							<!-- team-grids-caption -->
 							<!-- /team-grids -->
 						</div>
