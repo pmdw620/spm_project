@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Online Booking System: Home Page</title>
+		<title>Car Wash Booking System: Home Page</title>
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="js/bootstrap.min.js"></script>
@@ -188,21 +188,21 @@ li.dropdown {
 					          <img class="img-responsive" src="images/slide2.jpg" alt="">
 					          <div class="slider-caption">
 					          	<h1>the <span>Car</span> Wash CENTER</h1>
-					         	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
+					         	 <p>Welcome to the online booking system of Gabriel and David </p>
 					          </div>
 					        </li>
 					        <li>
 					          <img src="images/slide3.jpg" alt="">
 					           <div class="slider-caption">
 							   <h1>the <span>Car</span> Wash CENTER</h1>
-					          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
+							   <p>Welcome to the online booking system of Gabriel and David </p>
 					          </div>
 					        </li>
 					        <li>
 					          <img src="images/slide1.jpg" alt="">
 					           <div class="slider-caption">
 							   <h1>the <span>Car</span> Wash CENTER</h1>
-					           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin lectus in quam elementum aliquet. Quisque gravida fringilla velit nec ornare. </p>
+							   <p>Welcome to the online booking system of Gabriel and David </p>
 					          </div>
 					        </li>
 					      </ul>
@@ -216,7 +216,7 @@ li.dropdown {
 						<div class="container">
 						<div class="top-grids-head text-center">
 							<h2>Our Services</h2>
-							<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus. Sed efficitur cursus nibh</p>
+							<p>We are professional, we provide you with the most comfortable service</p>
 						</div>
 							<div class="col-md-4">
 								<div class="top-grid">
@@ -224,8 +224,8 @@ li.dropdown {
 										<span class="icons1"> </span>
 									</div>
 									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
+										<h3>Professional Skills</h3>
+										<p> We've been in this business for a long time</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -236,8 +236,8 @@ li.dropdown {
 										<span class="icons2"> </span>
 									</div>
 									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
+										<h3>Multiple Service</h3>
+										<p> We provide different types of services with different prices.</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -248,49 +248,13 @@ li.dropdown {
 										<span class="icons3"> </span>
 									</div>
 									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
+										<h3>Flexible Time</h3>
+										<p> Customers are free to choose when to wash their cars.</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="top-grid">
-									<div class="grid-icon">
-										<span class="icons4"> </span>
-									</div>
-									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="top-grid">
-									<div class="grid-icon">
-										<span class="icons5"> </span>
-									</div>
-									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="top-grid">
-									<div class="grid-icon">
-										<span class="icons6"> </span>
-									</div>
-									<div class="grid-info">
-										<h3>Lorem ipsum</h3>
-										<p> consectetur adipiscing elit. Proin fermentum dolor tortor, id interdum diam pulvinar feugiat.</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
+							
 						</div>
 					</div>
 					<!-- top-grids -->
@@ -303,8 +267,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4></h4>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -313,8 +277,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4></h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -323,8 +287,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -333,8 +297,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -343,8 +307,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -353,8 +317,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -363,8 +327,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="col-md-3 portfolio-grid">
@@ -373,8 +337,8 @@ li.dropdown {
 								</div>
 								<div class="portfolio-caption">
 									<a href="#"><span class="link"> </span></a>
-									<h4>vestibulum</h4>
-									<p>Praesent sem risus, posuere ut turpis in, facilisis aliquet metus</p>
+									<h4> </h4>
+									<p> </p>
 								</div>
 							</div>
 							<div class="clearfix"> </div>
@@ -382,11 +346,7 @@ li.dropdown {
 						<div class="clearfix"> </div>
 					</div>
 					<!-- portfoliogrids-caption -->
-					<div class="portfoliogrids-caption text-center">
-						<div class="container">
-							<p>posuere ut turpis in, facilisis aliquet metus<a class="port-btn" href="#">View Gallery</a></p>
-						</div>
-					</div>
+					
 					<!-- portfoliogrids-caption -->
 					<!-- portfolio -->
 					<!-- team -->
@@ -394,7 +354,7 @@ li.dropdown {
 						<div class="container">
 							<div class="team-head text-center">
 								<h3>Our team</h3>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+								<p>Our team is very professional.</p>
 							</div>
 							<!-- team-grids -->
 							<div class="team-grids">
@@ -405,21 +365,8 @@ li.dropdown {
 												<img src="images/people-pic.jpg" title="name" />
 											</div>
 											<div class="team-people-info">
-												<h3>Established</h3>
-												<p>reader will be distracted by the readable</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="team-grid">
-										<div class="team-people">
-											<div class="team-people-pic">
-												<img src="images/people-pic1.jpg" title="name" />
-											</div>
-											<div class="team-people-info">
-												<h3>Established</h3>
-												<p>reader will be distracted by the readable</p>
+												<h3>Gabriel</h3>
+												<p></p>
 											</div>
 										</div>
 									</div>
@@ -431,8 +378,8 @@ li.dropdown {
 												<img src="images/people-pic3.jpg" title="name" />
 											</div>
 											<div class="team-people-info">
-												<h3>Established</h3>
-												<p>reader will be distracted by the readable</p>
+												<h3>David</h3>
+												<p></p>
 											</div>
 										</div>
 									</div>
@@ -442,18 +389,7 @@ li.dropdown {
 						</div>
 					</div>
 							<!-- team-grids-caption -->
-							<div class="team-grids-caption">
-								<div class="container">
-									<div class="team-grids-caption-left">
-										<h4>He point of using Lorem Ipsum is that</h4>
-										<p>as opposed to using Many desktop publishing packages and web page editors now use </p>
-									</div>
-									<div class="team-grids-caption-right">
-										<a class="team-btn" href="#">ReadMore</a>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
+							
 							<!-- team-grids-caption -->
 							<!-- /team-grids -->
 						</div>
