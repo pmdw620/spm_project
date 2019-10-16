@@ -56,6 +56,12 @@
                 "cars"=>$cars, "bookings"=>$bookings);
             $_SESSION["user"] = $user_profile;
 
+            // get service providers' address
+            $sql = "select address from adminuser";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['adminAddress'] = $row['address'];
+
             // redirect user back to home page
             header("Location: http://localhost/spm_project/index.php");
         }

@@ -5,7 +5,9 @@
   <title>Carwash Website Template | About :: w3layouts</title>
   <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
   <script src="js/jquery.min.js"></script>
-  <!-- Custom Theme files -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuqFP1Q3sO42FF4tocgCTOQTpMMDzRsvQ">
+</script>
   <link href="css/style.css" rel='stylesheet' type='text/css' />
   <link href="css/style-new.css" rel='stylesheet' type='text/css' />
   <!-- Custom Theme files -->
@@ -64,7 +66,6 @@ li.dropdown {
 </style>
 
 
-
 <!-- container -->
 <!-- header -->
 <div class="header">
@@ -110,6 +111,7 @@ li.dropdown {
         $("span.menu").click(function () {
           $(".top-nav ul").slideToggle(1000);
         });
+        
       });
     </script>
     <!-- script-for-nav -->
@@ -182,8 +184,12 @@ li.dropdown {
           <tbody>
             <tr >
                 <td colspan="4"  style="border-width: 0; text-align: left;">
-                        <a href="booking.php" ><button  class="btn btn-success btn-lg" name="newBooking">NEW BOOKING</button></a>
+                        <!-- <a href="booking.php" ><button  class="btn btn-success btn-lg" name="newBooking">NEW BOOKING</button></a> -->
+                        <button  class="btn btn-success btn-lg" name="newBooking" onclick="getDistance()">NEW BOOKING</button>
                 </td>
+                
+                  <input type='hidden' id='destination' value='<?php echo $_SESSION['user']['street'].", ".$_SESSION['user']['suburb']; ?>'>
+                  <input type='hidden' id='origin' value='<?php echo $_SESSION['adminAddress'];?>'>
             </tr>
             <form action="phpsrc/bookingManagement.php" method="post">
             <tr class="head">
@@ -338,5 +344,28 @@ li.dropdown {
     </div>
   </div>
 </div>
+<script>
+  function getDistance(){
+    var origin = document.getElementById("origin").value;
+    var destination = document.getElementById("destination").value;
+    var service = new google.maps.DistanceMatrixService();
+    service.getDistanceMatrix(
+    {
+      origins: [origin],
+      destinations: [destination],
+      travelMode: 'DRIVING'
+    }, callback);
+  }
+
+  function callback(response, status){
+    if(status == 'OK')
+      var dist = response.rows[0].elements[0].distance.value;
+      if(dist > 5000){
+        alert("Sorry, we are not able to provide service that outrange 5 km from our home. Thank you for your understanding!");
+      } else{
+        window.location.replace("booking.php");
+      }
+    }
+</script>
 
 </html>
