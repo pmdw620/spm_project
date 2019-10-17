@@ -256,4 +256,5 @@
             header("Location: http://localhost/spm_project/booking.php");
         }  
     }
+	require 'closeDBConn.php';
 ?>

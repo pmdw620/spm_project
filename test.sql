@@ -39,4 +39,4 @@ create table adminuser(
 insert into booking values('mp878@example.com', 'Hatchback', 1, '2019-10-12 14:00', 'test');
 select service_time from booking where service_time >= '2019-10-10' and service_time < '2019-10-17';
 
-insert into adminuser values('admin', 'a41acc7effe601de1dc2099a4e2fdd7c', '80 Clarence St, Brunswick East, VIC 3057');
+insert into adminuser values('admin', '1bbd886460827015e5d605ed44252251', '80 Clarence St, Brunswick East, VIC 3057');

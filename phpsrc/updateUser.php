@@ -33,5 +33,5 @@
                 "street"=>$street, "suburb"=>$suburb, "postcode"=>$postcode, "phoneNumber"=>$phoneNumber, 
                 "cars"=>$cars, "bookings"=>$bookings);
             $_SESSION["user"] = $user_profile;
-    require 'closeDBconn.php'
+    require 'closeDBConn.php'
 ?>
